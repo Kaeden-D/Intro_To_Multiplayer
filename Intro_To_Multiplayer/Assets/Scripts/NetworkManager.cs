@@ -42,12 +42,12 @@ public class NetworkManager : MonoBehaviourPunCallbacks
     {
         PhotonNetwork.LoadLevel(sceneName);
     }
-
+    /*
     public override void OnConnectedToMaster()
     {
         CreateRoom("testroom");
     }
-
+    */
     public override void OnCreatedRoom()
     {
         Debug.Log("Created room: " + PhotonNetwork.CurrentRoom.Name);
