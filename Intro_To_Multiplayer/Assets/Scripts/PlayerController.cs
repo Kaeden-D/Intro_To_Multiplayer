@@ -20,7 +20,7 @@ public class PlayerController : MonoBehaviourPunCallbacks, IPunObservable
     [Header("Components")]
     public Rigidbody rig;
     public Player photonPlayer;
-    public PhotonView photonView;
+    //public PhotonView photonView;
 
     // called when the player object is instantiated
     [PunRPC]

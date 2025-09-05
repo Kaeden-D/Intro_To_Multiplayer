@@ -1511,7 +1511,7 @@ MonoBehaviour:
   gameEnded: 0
   timeToWin: 15
   invincibleDuration: 0.5
-  playerPrefabLocation: Player
+  playerPrefabLocation: Assets/Resources/Player.prefab
   spawnPoints:
   - {fileID: 1637634430}
   - {fileID: 112821385}

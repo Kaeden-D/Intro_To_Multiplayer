@@ -376,6 +376,7 @@ MonoBehaviour:
   observableSearch: 2
   ObservedComponents:
   - {fileID: 8552667284847685003}
+  - {fileID: 6134047292125652579}
   sceneViewId: 0
   InstantiationId: 0
   isRuntimeInstantiated: 0
@@ -413,6 +414,7 @@ MonoBehaviour:
   hatObject: {fileID: 4988564696691757872}
   curHatTime: 0
   rig: {fileID: 5083983965335685440}
+  photonView: {fileID: 7393256859824949292}
 --- !u!1 &4988564696691757872
 GameObject:
   m_ObjectHideFlags: 0
