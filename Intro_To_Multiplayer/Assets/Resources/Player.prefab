@@ -409,12 +409,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   id: 0
-  moveSpeed: 1
-  jumpForce: 1
+  moveSpeed: 8
+  jumpForce: 6
   hatObject: {fileID: 4988564696691757872}
   curHatTime: 0
   rig: {fileID: 5083983965335685440}
-  photonView: {fileID: 7393256859824949292}
 --- !u!1 &4988564696691757872
 GameObject:
   m_ObjectHideFlags: 0
