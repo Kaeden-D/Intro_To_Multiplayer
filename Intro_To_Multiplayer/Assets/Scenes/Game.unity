@@ -487,7 +487,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 5.8
+  orthographic size: 6.3
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -511,8 +511,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 330585543}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.18023993, y: 0.37533024, z: -0.07465782, w: 0.90612745}
-  m_LocalPosition: {x: -20, y: 14, z: -20}
+  m_LocalRotation: {x: 0.1950903, y: -0, z: -0, w: 0.98078537}
+  m_LocalPosition: {x: 0, y: 14.87, z: -27.56}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2046,7 +2046,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1608903796}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: 0, y: 0.38268343, z: 0, w: 0.92387956}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -2060,7 +2060,7 @@ Transform:
   - {fileID: 1584528194}
   - {fileID: 1109771113}
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 45, z: 0}
 --- !u!1 &1637634429
 GameObject:
   m_ObjectHideFlags: 0
@@ -2289,7 +2289,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1701778034}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: 0, y: 0.38268343, z: 0, w: 0.92387956}
   m_LocalPosition: {x: 0, y: 0, z: -0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -2297,7 +2297,7 @@ Transform:
   - {fileID: 1920866054}
   - {fileID: 2090474584}
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 45, z: 0}
 --- !u!1 &1713739950
 GameObject:
   m_ObjectHideFlags: 0
@@ -3010,8 +3010,8 @@ GameObject:
   - component: {fileID: 2090474586}
   - component: {fileID: 2090474585}
   m_Layer: 0
-  m_Name: Ground (1)
-  m_TagString: Untagged
+  m_Name: Bounce
+  m_TagString: Bounce
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3025,7 +3025,7 @@ Transform:
   m_GameObject: {fileID: 2090474583}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 2.5, z: 0}
+  m_LocalPosition: {x: 0, y: 2.08, z: 0}
   m_LocalScale: {x: 2, y: 2, z: 2}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -3259,7 +3259,6 @@ CanvasRenderer:
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
-  - {fileID: 330585546}
   - {fileID: 410087041}
   - {fileID: 832575519}
   - {fileID: 1196299719}
@@ -3267,3 +3266,4 @@ SceneRoots:
   - {fileID: 1608903797}
   - {fileID: 828656232}
   - {fileID: 1250233992}
+  - {fileID: 330585546}

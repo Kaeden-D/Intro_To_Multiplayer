@@ -102,6 +102,12 @@ public class PlayerController : MonoBehaviourPunCallbacks, IPunObservable
                 }
             }
         }
+
+        // did we hit the bounce pad
+        if (collision.gameObject.CompareTag("Bounce"))
+        {
+            rig.AddForce(Vector3.up * jumpForce * 2, ForceMode.Impulse);
+        }
     }
 
     public void OnPhotonSerializeView(PhotonStream stream, PhotonMessageInfo info)
