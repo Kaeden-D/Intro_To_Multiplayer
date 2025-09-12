@@ -115,8 +115,8 @@ public class GameManager : MonoBehaviourPunCallbacks
             return;
         }
         int giveID = Random.Range(0, playersInGame - 2);
-        if (giveID == id) { giveID = playersInGame - 1; }
-        photonView.RPC("GiveHat", RpcTarget.All, giveID, false);
+        if (players[giveID] == players[id]) { giveID = playersInGame - 1; }
+        photonView.RPC("GiveHat", RpcTarget.All, players[giveID], false);
     }
 
 }
