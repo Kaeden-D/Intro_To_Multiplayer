@@ -103,4 +103,20 @@ public class GameManager : MonoBehaviourPunCallbacks
         NetworkManager.instance.ChangeScene("Menu");
     }
 
+    public void giveHatRandomly()
+    {
+        photonView.RPC("GiveHat", RpcTarget.All, Random.Range(0, playersInGame - 1), false);
+    }
+
+    public void giveHatRandomly(int id)
+    {   
+        if (playersInGame <= 1)
+        {
+            return;
+        }
+        int giveID = Random.Range(0, playersInGame - 2);
+        if (giveID == id) { giveID = playersInGame - 1; }
+        photonView.RPC("GiveHat", RpcTarget.All, giveID, false);
+    }
+
 }

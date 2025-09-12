@@ -108,6 +108,19 @@ public class PlayerController : MonoBehaviourPunCallbacks, IPunObservable
         {
             rig.AddForce(Vector3.up * jumpForce * 2, ForceMode.Impulse);
         }
+
+        // did we hit the death barriers
+        if (collision.gameObject.CompareTag("Death"))
+        {
+            this.transform.position = new Vector3(0f, 8f, 0f);
+            // do we have the hat?
+            int id = GameManager.instance.GetPlayer(this.gameObject).id;
+            if (id == GameManager.instance.playerWithHat)
+            {
+                // transfer the hat randomly
+                GameManager.instance.giveHatRandomly(id);
+            }
+        }
     }
 
     public void OnPhotonSerializeView(PhotonStream stream, PhotonMessageInfo info)
